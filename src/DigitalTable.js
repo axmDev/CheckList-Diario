@@ -67,7 +67,7 @@ const DigitalTable = () => {
     if (realizadoPor && activitiesStatus.every((status) => status)) {
       try {
         const clientResponse = await axios.get(
-          "http://192.168.204.76:3001/get-client-info"
+          "http://192.168.206.74:3001/get-client-info"
         );
         const clientInfo = clientResponse.data;
         const formData = {
@@ -82,7 +82,7 @@ const DigitalTable = () => {
 
         console.log("Datos enviados:", formData);
         const response = await axios.post(
-          "http://192.168.204.76:3001/submit-form",
+          "http://192.168.206.74:3001/submit-form",
           formData,
           {
             headers: {

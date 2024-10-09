@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Database Connection
 const db = mysql.createConnection({
-    host: '192.168.204.197',
+    host: '192.168.206.74',
     user: 'axroot',
     password: 'adminControl',
     database: 'completes'
@@ -35,7 +35,7 @@ const lineas = {
 
     },
     2: {
-        '192.168.205.103': 'rack-flg-02-01',
+        '192.168.206.74': 'rack-flg-02-01',
     },
     3: {
         '192.168.206.43': 'device-Manuel-Iglesias'
